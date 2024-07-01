@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react';
 import SearchBar from './Searchbar/Searchbar';
 import ImageGallery from './ImageGallery/ImageGallery';
@@ -139,7 +138,9 @@ class App extends Component {
   }
 }
 
-export { App };
+export default App;
+
+// export { App }
 
 // export const App = () => {
 //   return (
