@@ -1,7 +1,7 @@
 // src/components/Modal/Modal.js
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import styles from './Modal.module.css'; // Make sure to create a corresponding CSS module
+import styles from './Modal.module.css';
 
 class Modal extends Component {
   static propTypes = {
