@@ -7,7 +7,7 @@ import { getAPI } from 'pixabay-api';
 import styles from './App.module.css';
 import toast, { Toaster } from 'react-hot-toast';
 
-class App extends Component {
+export class App extends Component {
   state = {
     images: [],
     currentPage: 1,
