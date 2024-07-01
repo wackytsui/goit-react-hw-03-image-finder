@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Searchbar from './Searchbar/Searchbar';
+import SearchBar from './Searchbar/Searchbar';
 import ImageGallery from './ImageGallery/ImageGallery';
 import Button from './Button/Button';
 import Loader from './Loader/Loader';
@@ -125,7 +125,7 @@ export class App extends Component {
     const { images, isLoading, isError, isEnd } = this.state;
     return (
       <div className={styles.App}>
-        <Searchbar onSubmit={this.handleSearchSubmit} />
+        <SearchBar onSubmit={this.handleSearchSubmit} />
         <ImageGallery images={images} />
         {isLoading && <Loader />}
         {!isLoading && !isError && images.length > 0 && !isEnd && (
