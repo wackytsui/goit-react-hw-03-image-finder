@@ -1,19 +1,3 @@
-// export const App = () => {
-//   return (
-//     <div
-//       style={{
-//         height: '100vh',
-//         display: 'flex',
-//         justifyContent: 'center',
-//         alignItems: 'center',
-//         fontSize: 40,
-//         color: '#010101'
-//       }}
-//     >
-//       React homework template
-//     </div>
-//   );
-// };
 
 import React, { Component } from 'react';
 import SearchBar from './Searchbar/Searchbar';
@@ -34,9 +18,10 @@ class App extends Component {
     isEnd: false,
   };
 
+  
   async componentDidUpdate(_prevProps, prevState) {
     const { searchQuery, currentPage } = this.state;
-
+    
     // Fetch new images if the search query or current page changes
     if (
       prevState.searchQuery !== searchQuery ||
@@ -154,4 +139,21 @@ class App extends Component {
   }
 }
 
-export default App;
+export { App };
+
+// export const App = () => {
+//   return (
+  //     <div
+  //       style={{
+//         height: '100vh',
+//         display: 'flex',
+//         justifyContent: 'center',
+//         alignItems: 'center',
+//         fontSize: 40,
+//         color: '#010101'
+//       }}
+//     >
+//       React homework template
+//     </div>
+//   );
+// };
